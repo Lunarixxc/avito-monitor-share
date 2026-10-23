@@ -1,0 +1,17 @@
+[Unit]
+Description=Avito daily top digest
+After=network-online.target avito-monitor.service
+
+[Service]
+Type=oneshot
+User=asat
+WorkingDirectory=/home/asat/codex-work/avito-monitor/research/avito-e2e
+ExecStart=/home/asat/codex-work/avito-monitor/research/avito-e2e/.venv/bin/python /home/asat/codex-work/avito-monitor/research/avito-e2e/notifications.py --scheduled
+TimeoutStartSec=180
+UMask=0077
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/asat/codex-work/avito-monitor/research/avito-e2e/results
+PrivateTmp=yes
+RestrictAddressFamilies=AF_INET AF_UNIX

@@ -1,0 +1,22 @@
+[Unit]
+Description=Avito Telegram top controls
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=asat
+WorkingDirectory=/home/asat/codex-work/avito-monitor/research/avito-e2e
+ExecStart=/home/asat/codex-work/avito-monitor/research/avito-e2e/.venv/bin/python /home/asat/codex-work/avito-monitor/research/avito-e2e/telegram_control.py
+Restart=on-failure
+RestartSec=15
+UMask=0077
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/asat/codex-work/avito-monitor/research/avito-e2e/results
+PrivateTmp=yes
+RestrictAddressFamilies=AF_INET AF_UNIX
+
+[Install]
+WantedBy=multi-user.target

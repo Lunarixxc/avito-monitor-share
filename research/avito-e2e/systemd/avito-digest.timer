@@ -1,0 +1,11 @@
+[Unit]
+Description=Avito daily top at 20:00 Moscow time
+
+[Timer]
+OnCalendar=*-*-* 20:00,05,10:00 Europe/Moscow
+AccuracySec=10s
+Persistent=false
+Unit=avito-digest.service
+
+[Install]
+WantedBy=timers.target

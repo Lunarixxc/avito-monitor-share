@@ -1,0 +1,38 @@
+.venv/
+private/
+results/
+__pycache__/
+.env
+
+# Generated Python, JavaScript, and runtime files
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.py[cod]
+*.log
+logs/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+node_modules/
+
+# Separate research checkout
+research/avito-e2e/upstream/
+
+# Agent memory runtime and local credentials
+.sessions/
+.env.*
+!.env.example
+auth.json
+credentials.json
+*.key
+*.pem
+
+# Private working notes and machine-specific agent configuration
+.wiki/
+AGENTS.md
+CLAUDE.md

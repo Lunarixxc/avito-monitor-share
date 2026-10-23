@@ -1,0 +1,21 @@
+[Unit]
+Description=Avito laptops snapshot and price history
+Requires=avito-monitor-direct.service
+After=avito-monitor-direct.service network-online.target
+
+[Service]
+Type=oneshot
+User=asat
+WorkingDirectory=/home/asat/codex-work/avito-monitor/research/avito-e2e
+Environment=AVITO_DIRECT_PROXY=http://127.0.0.1:18082
+Environment=AVITO_MAX_PRICE=65000
+Environment=OMP_NUM_THREADS=1
+ExecStart=/home/asat/codex-work/avito-monitor/research/avito-e2e/.venv/bin/python /home/asat/codex-work/avito-monitor/research/avito-e2e/monitor.py --scheduled
+TimeoutStartSec=420
+UMask=0077
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/asat/codex-work/avito-monitor/research/avito-e2e/results
+PrivateTmp=yes
+RestrictAddressFamilies=AF_INET AF_UNIX

@@ -1,0 +1,11 @@
+[Unit]
+Description=Avito daytime events every two hours, Moscow time
+
+[Timer]
+OnCalendar=*-*-* 09,11,13,15,17,19,21:00:00 Europe/Moscow
+AccuracySec=30s
+Persistent=false
+Unit=avito-monitor.service
+
+[Install]
+WantedBy=timers.target

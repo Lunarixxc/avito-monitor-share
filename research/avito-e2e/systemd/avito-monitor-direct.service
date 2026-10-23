@@ -1,0 +1,15 @@
+[Unit]
+Description=Direct loopback transport for Avito monitor
+StopWhenUnneeded=yes
+
+[Service]
+Type=simple
+User=asat
+ExecStart=/usr/bin/python3 /home/asat/codex-work/avito-monitor/research/cdp-linux/diagnostic_proxy.py --port 18082
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=read-only
+PrivateTmp=yes
+CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_RAW
+AmbientCapabilities=CAP_NET_ADMIN CAP_NET_RAW
+RestrictAddressFamilies=AF_INET AF_UNIX

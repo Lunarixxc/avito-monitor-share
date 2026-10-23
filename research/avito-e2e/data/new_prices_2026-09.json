@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "id": "user-2026-09-20",
+  "as_of": "2026-09-20",
+  "currency": "RUB",
+  "source": "Таблица пользователя в рабочем чате, 20.09.2026",
+  "verification": "user_supplied_unverified",
+  "notes": [
+    "Приблизительные средние по моделям, не цены сделок; прямых ссылок и исходной выборки нет",
+    "Скидки и условия оплаты могут отличаться",
+    "Категории CPU взяты из метода пользователя, это не рейтинг производительности",
+    "TGP, SSD, VRAM и модель ноутбука не контролируются",
+    "В сводках RTX 3060 указаны разные средние: 90000 и 95000; GPU-ориентир взят из отдельной сводной таблицы"
+  ],
+  "segments": [
+    {
+      "cpu_tier": "budget",
+      "ram_gb": 8,
+      "gpu": "RTX 3050",
+      "mean_rub": 68000,
+      "range_rub": [
+        65000,
+        72000
+      ],
+      "approx_model_count": 2,
+      "issues": []
+    },
+    {
+      "cpu_tier": "performance",
+      "ram_gb": 8,
+      "gpu": "RTX 3050",
+      "mean_rub": 80000,
+      "range_rub": [
+        69000,
+        89000
+      ],
+      "approx_model_count": 3,
+      "issues": []
+    },
+    {
+      "cpu_tier": "budget",
+      "ram_gb": 16,
+      "gpu": "RTX 3050",
+      "mean_rub": 80000,
+      "range_rub": [
+        70000,
+        90000
+      ],
+      "approx_model_count": 10,
+      "issues": []
+    },
+    {
+      "cpu_tier": "performance",
+      "ram_gb": 16,
+      "gpu": "RTX 3050",
+      "mean_rub": 100000,
+      "range_rub": [
+        95000,
+        105000
+      ],
+      "approx_model_count": 4,
+      "issues": []
+    },
+    {
+      "cpu_tier": "budget",
+      "ram_gb": 16,
+      "gpu": "RTX 3060",
+      "mean_rub": 90000,
+      "range_rub": [
+        85000,
+        100000
+      ],
+      "approx_model_count": 2,
+      "issues": [
+        "Редкие остатки; слабая выборка",
+        "Пример Ryzen 7 5800H не соответствует категории CPU"
+      ]
+    },
+    {
+      "cpu_tier": "performance",
+      "ram_gb": 16,
+      "gpu": "RTX 3060",
+      "mean_rub": 95000,
+      "range_rub": [
+        85000,
+        105000
+      ],
+      "approx_model_count": 2,
+      "issues": [
+        "Редкие остатки; слабая выборка"
+      ]
+    },
+    {
+      "cpu_tier": "budget",
+      "ram_gb": 16,
+      "gpu": "RTX 4050",
+      "mean_rub": 90000,
+      "range_rub": [
+        84000,
+        95000
+      ],
+      "approx_model_count": 8,
+      "issues": []
+    },
+    {
+      "cpu_tier": "performance",
+      "ram_gb": 16,
+      "gpu": "RTX 4050",
+      "mean_rub": 103000,
+      "range_rub": [
+        95000,
+        110000
+      ],
+      "approx_model_count": 6,
+      "issues": []
+    },
+    {
+      "cpu_tier": "budget",
+      "ram_gb": 16,
+      "gpu": "RTX 4060",
+      "mean_rub": 105000,
+      "range_rub": [
+        95000,
+        115000
+      ],
+      "approx_model_count": 4,
+      "issues": []
+    },
+    {
+      "cpu_tier": "performance",
+      "ram_gb": 16,
+      "gpu": "RTX 4060",
+      "mean_rub": 115000,
+      "range_rub": [
+        90000,
+        135000
+      ],
+      "approx_model_count": 6,
+      "issues": []
+    },
+    {
+      "cpu_tier": "performance",
+      "ram_gb": 16,
+      "gpu": "RTX 4070",
+      "mean_rub": 160000,
+      "range_rub": [
+        140000,
+        190000
+      ],
+      "approx_model_count": 6,
+      "issues": []
+    },
+    {
+      "cpu_tier": "budget",
+      "ram_gb": 16,
+      "gpu": "RTX 5050",
+      "mean_rub": 105000,
+      "range_rub": [
+        98000,
+        110000
+      ],
+      "approx_model_count": 8,
+      "issues": [
+        "В примерах смешаны категории CPU"
+      ]
+    },
+    {
+      "cpu_tier": "performance",
+      "ram_gb": 16,
+      "gpu": "RTX 5050",
+      "mean_rub": 113000,
+      "range_rub": [
+        103000,
+        121000
+      ],
+      "approx_model_count": 5,
+      "issues": [
+        "В примерах смешаны категории CPU"
+      ]
+    },
+    {
+      "cpu_tier": "budget",
+      "ram_gb": 16,
+      "gpu": "RTX 5060",
+      "mean_rub": 120000,
+      "range_rub": [
+        115000,
+        135000
+      ],
+      "approx_model_count": 8,
+      "issues": [
+        "В примерах смешаны категории CPU"
+      ]
+    },
+    {
+      "cpu_tier": "performance",
+      "ram_gb": 16,
+      "gpu": "RTX 5060",
+      "mean_rub": 145000,
+      "range_rub": [
+        124000,
+        225000
+      ],
+      "approx_model_count": 10,
+      "issues": [
+        "В примерах смешаны категории CPU",
+        "В строке 16 ГБ есть пример с 32 ГБ"
+      ]
+    }
+  ],
+  "gpu_only": [
+    {
+      "gpu": "RTX 3050",
+      "mean_rub": 85000,
+      "min_rub": 65000,
+      "rare": false
+    },
+    {
+      "gpu": "RTX 3060",
+      "mean_rub": 95000,
+      "min_rub": 85000,
+      "rare": true
+    },
+    {
+      "gpu": "RTX 3070",
+      "mean_rub": 110000,
+      "min_rub": 89000,
+      "rare": true
+    },
+    {
+      "gpu": "RTX 4050",
+      "mean_rub": 97000,
+      "min_rub": 80000,
+      "rare": false
+    },
+    {
+      "gpu": "RTX 4060",
+      "mean_rub": 112000,
+      "min_rub": 90000,
+      "rare": false
+    },
+    {
+      "gpu": "RTX 4070",
+      "mean_rub": 160000,
+      "min_rub": 140000,
+      "rare": false
+    },
+    {
+      "gpu": "RTX 5050",
+      "mean_rub": 108000,
+      "min_rub": 98000,
+      "rare": false
+    },
+    {
+      "gpu": "RTX 5060",
+      "mean_rub": 130000,
+      "min_rub": 115000,
+      "rare": false
+    }
+  ],
+  "missing_segments": [
+    "RTX 3060 / 8 ГБ",
+    "RTX 4050 / budget / 8 ГБ",
+    "RTX 4070 / budget / 16 ГБ"
+  ],
+  "source_catalogs_named_by_user": [
+    "DNS",
+    "Ситилинк",
+    "Регард",
+    "Яндекс.Маркет",
+    "Ozon",
+    "kod.ru",
+    "DTF",
+    "xcom-shop",
+    "mobile-review",
+    "rozetked"
+  ]
+}

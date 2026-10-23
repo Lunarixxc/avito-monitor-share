@@ -1,0 +1,5 @@
+__pycache__/
+*.log
+attempt.claim
+cooldown-result.json
+probe-output.txt
